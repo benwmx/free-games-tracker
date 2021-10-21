@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Games = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Games = () => (
+  <div>
+    <p>EMpty Games</p>
+  </div>
+);
 
 export default Games;

@@ -3,19 +3,23 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Games from './components/Games';
 import Details from './components/Details';
+import About from './components/About';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route path="/" exact>
             <Games />
           </Route>
-          <Route>
-            <Details path="/details" />
+          <Route path="/details">
+            <Details />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </Router>
