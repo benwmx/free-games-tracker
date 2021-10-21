@@ -7,7 +7,13 @@ const Details = () => {
   const details = useSelector((state) => state.details);
   return (
     <div className="container">
-      <ImageSlider />
+      <div className="screenShotsContainer">
+        {
+        (details.screenshots === undefined)
+          ? 'Loading ...'
+          : <ImageSlider screenshots={details.screenshots} thumbnail={details.thumbnail} />
+      }
+      </div>
       <div className="detailsContainer">
         <h1>{details.title}</h1>
         <div className="genre">

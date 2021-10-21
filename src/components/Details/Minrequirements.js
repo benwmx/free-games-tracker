@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Minrequirements = (props) => {
   const { requirements } = props;
-  console.log(requirements.os === null);
 
   return (
     <div className="minReqsContainer">

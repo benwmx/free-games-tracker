@@ -30,7 +30,7 @@ const Games = () => {
     setSearchResult(result);
   };
 
-  const onGameClick = (event, id) => {
+  const onGameClick = (id) => {
     dispatch(getDetailsOfAGame(id));
   };
 
@@ -51,12 +51,12 @@ const Games = () => {
         {
           (searchResult === null)
             ? games.map((game) => (
-              <NavLink key={game.id} to="/details" onClick={(event) => onGameClick(event, game.id)}>
+              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)}>
                 <Game game={game} />
               </NavLink>
             ))
             : searchResult.map((game) => (
-              <NavLink key={game.id} to="/details" onClick={(event) => onGameClick(event, game.id)}>
+              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)}>
                 <Game game={game} />
               </NavLink>
             ))
