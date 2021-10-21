@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getListOfGames } from '../../redux/games';
+import { getDetailsOfAGame } from '../../redux/details';
 import Game from './Game';
 import Logo from '../../img/controller.png';
 
@@ -30,7 +31,7 @@ const Games = () => {
   };
 
   const onGameClick = (id) => {
-    console.log(id);
+    getDetailsOfAGame(id);
   };
 
   return (
