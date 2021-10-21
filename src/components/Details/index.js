@@ -9,7 +9,7 @@ const Details = () => {
     <div className="container">
       <ImageSlider />
       <div className="detailsContainer">
-        <h1>title</h1>
+        <h1>{details.title}</h1>
         <div className="genre">
           <p className="name">Genre</p>
           <p className="value">{details.genre}</p>
@@ -33,7 +33,24 @@ const Details = () => {
           </p>
         </div>
       </div>
-      <Minrequirements requirements={details.minimum_system_requirements} />
+      <div className="minReqs">
+        {
+          (details.minimum_system_requirements !== undefined)
+            ? <Minrequirements requirements={details.minimum_system_requirements} />
+            : ''
+        }
+      </div>
+      <div className="link">
+        <p className="name">Link</p>
+        <p className="value">
+          {
+          (details.game_url !== undefined)
+            ? <a href={details.game_url}>more on official Website</a>
+            : 'No'
+        }
+        </p>
+      </div>
+
     </div>
   );
 };

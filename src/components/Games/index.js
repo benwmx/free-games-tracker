@@ -56,7 +56,7 @@ const Games = () => {
               </NavLink>
             ))
             : searchResult.map((game) => (
-              <NavLink key={game.id} to="/details">
+              <NavLink key={game.id} to="/details" onClick={(event) => onGameClick(event, game.id)}>
                 <Game game={game} />
               </NavLink>
             ))
