@@ -33,7 +33,7 @@ const Details = () => {
           </p>
         </div>
       </div>
-      <Minrequirements />
+      <Minrequirements requirements={details.minimum_system_requirements} />
     </div>
   );
 };
