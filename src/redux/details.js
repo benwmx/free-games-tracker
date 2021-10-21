@@ -1,6 +1,6 @@
 const ADD_DETAILS_OF_A_GAME_TO_STORE = 'ADD_DETAILS_OF_A_GAME_TO_STORE';
 
-const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
+const url = 'https://free-to-play-games-database.p.rapidapi.com/api/game';
 const initialState = {};
 
 const addDetailsOfAGameToStore = (payload) => ({
