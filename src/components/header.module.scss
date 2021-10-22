@@ -1,0 +1,19 @@
+.header {
+  background-color: aqua;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .infoAndTheme {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .headerBtns {
+    font-size: 1.5rem;
+  }
+}
