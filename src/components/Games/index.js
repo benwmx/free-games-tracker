@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { getListOfGames } from '../../redux/games';
 import { getDetailsOfAGame } from '../../redux/details';
 import Game from './Game';
-import Logo from '../../img/controller.png';
+import Styles from './game.module.scss';
 
 const Games = () => {
   const games = useSelector((state) => state.games);
@@ -35,17 +35,16 @@ const Games = () => {
   };
 
   return (
-    <div className="container">
-      <div className="intro">
-        <img src={Logo} alt="game Controller" className="logo" />
-        <div className="introSearch">
-          <h1>Free Games Tracker</h1>
+    <div className={Styles.container}>
+      <div className={Styles.introSearch}>
+        <div className={Styles.intro}>
+          <h1 className={Styles.title}>Free Games Tracker</h1>
           <p>Games from 1997 up to now</p>
           <p>You can search by Title,Realease Date,Genre,Developer</p>
-          <form>
-            <input type="text" className="searchBar" placeholder="Search A Game" onChange={handleSearch} />
-          </form>
         </div>
+        <form className={Styles.search}>
+          <input type="text" className={Styles.searchBar} placeholder="Search A Game" onChange={handleSearch} />
+        </form>
       </div>
       <div className="gamesContainer">
         {
