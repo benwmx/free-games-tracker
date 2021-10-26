@@ -4,17 +4,20 @@
 .container {
   width: 100%;
   margin-top: 50px;
+  background-color: #e2edee;
+  background-image: url('../../img/memphis-mini.png');
 }
 
 .introSearch {
   width: 100%;
   display: flex;
   flex-flow: column;
-  background-image: url('../../img/swirl_pattern.png');
+  background-image: url('../../img/webb.png');
   color: red;
+  padding-bottom: 50px;
 
   .intro {
-    margin: 20px;
+    margin: 20px 40px;
 
     .title {
       font-family: 'Permanent Marker', cursive;
@@ -23,10 +26,10 @@
   }
 
   .search {
-    margin: 20px;
+    margin: 20px 40px;
 
     .searchBar {
-      width: 100%;
+      width: 90%;
       height: 30px;
       background-color: transparent;
       border: none;
@@ -42,6 +45,8 @@
   width: 100%;
   margin-top: 50px;
   display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 
   .gameContainer {
@@ -57,6 +62,7 @@
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     .image {
       width: 100%;
