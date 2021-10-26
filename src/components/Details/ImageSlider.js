@@ -17,7 +17,7 @@ const ImageSlider = (props) => {
             <Slide easing="ease">
               {
           screenshots.map((screenshot) => (
-            <img key={screenshot.id} src={screenshot.image} style={{ width: '100%', backgroundSize: 'content' }} alt="game screenshot" />
+            <img key={screenshot.id} src={screenshot.image} style={{ width: '100%', backgroundSize: 'content' }} alt="game screenshot not available" />
           ))
         }
             </Slide>

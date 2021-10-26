@@ -25,18 +25,26 @@ const Header = () => {
   };
 
   return (
-    <header className={Styles.header}>
+    <header
+      className={Styles.header}
+      style={(theme.darkTheme)
+        ? { backgroundColor: 'rgba(14, 14, 14, 0.8)' }
+        : { backgroundColor: 'rgba(219, 219, 219, 0.8)' }}
+    >
       <NavLink to="/" onClick={onClickArrow}>
-        <BiLeftArrow className={Styles.headerBtns} style={(details.empty) ? { display: 'none' } : {}} />
+        <BiLeftArrow className={(theme.darkTheme) ? Styles.headerBtnsDark : Styles.headerBtnsLight} style={(details.empty) ? { display: 'none' } : {}} />
       </NavLink>
       <div className={Styles.infoAndTheme}>
         {
           (theme.darkTheme)
-            ? <BsSunFill className={Styles.headerBtns} onClick={onClickTheme} />
-            : <BsMoonFill className={Styles.headerBtns} onClick={onClickTheme} />
+            ? <BsSunFill className={Styles.headerBtnsDark} onClick={onClickTheme} />
+            : <BsMoonFill className={Styles.headerBtnsLight} onClick={onClickTheme} />
         }
         <NavLink to="/about">
-          <BsInfoCircleFill className={Styles.headerBtns} onClick={onClickInfo} />
+          <BsInfoCircleFill
+            className={(theme.darkTheme) ? Styles.headerBtnsDark : Styles.headerBtnsLight}
+            onClick={onClickInfo}
+          />
         </NavLink>
       </div>
     </header>

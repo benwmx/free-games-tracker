@@ -2,12 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import ImageSlider from './ImageSlider';
 import Minrequirements from './Minrequirements';
+import Styles from './details.module.scss';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
   return (
-    <div className="container">
-      <div className="screenShotsContainer">
+    <div className={Styles.container}>
+      <div className={Styles.screenShotsContainer}>
         {
         (details.screenshots === undefined)
           ? 'Loading ...'
