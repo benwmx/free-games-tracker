@@ -46,16 +46,16 @@ const Games = () => {
           <input type="text" className={Styles.searchBar} placeholder="Search A Game" onChange={handleSearch} />
         </form>
       </div>
-      <div className="gamesContainer">
+      <div className={Styles.gamesContainer}>
         {
           (searchResult === null)
             ? games.map((game) => (
-              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)}>
+              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)} className={Styles.gameContainer}>
                 <Game game={game} />
               </NavLink>
             ))
             : searchResult.map((game) => (
-              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)}>
+              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)} className={Styles.gameContainer}>
                 <Game game={game} />
               </NavLink>
             ))
