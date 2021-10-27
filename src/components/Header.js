@@ -28,7 +28,7 @@ const Header = () => {
     <header
       className={Styles.header}
       style={(theme.darkTheme)
-        ? { backgroundColor: 'rgba(14, 14, 14, 0.8)' }
+        ? { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
         : { backgroundColor: 'rgba(219, 219, 219, 0.8)' }}
     >
       <NavLink to="/" onClick={onClickArrow}>

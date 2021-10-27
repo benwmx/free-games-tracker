@@ -9,6 +9,7 @@ import Styles from './game.module.scss';
 
 const Games = () => {
   const games = useSelector((state) => state.games);
+  const theme = useSelector((state) => state.theme);
   const [searchResult, setSearchResult] = useState(null);
   const dispatch = useDispatch();
 
@@ -35,8 +36,8 @@ const Games = () => {
   };
 
   return (
-    <div className={Styles.container}>
-      <div className={Styles.introSearch}>
+    <div className={(theme.darkTheme) ? Styles.containerDark : Styles.containerLight}>
+      <div className={(theme.darkTheme) ? Styles.introSearchDark : Styles.introSearchLight}>
         <div className={Styles.intro}>
           <h1 className={Styles.title}>Free Games Tracker</h1>
           <p>Games from 1997 up to now</p>

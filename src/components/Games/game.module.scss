@@ -3,15 +3,26 @@
 
 .container {
   width: 100%;
+  min-height: 100vh;
   margin-top: 50px;
-  background-image: url('../../img/memphis-mini.png');
+}
+
+.containerDark {
+  @extend .container;
+
+  background-image: url('../../img/webb-dark.png');
+}
+
+.containerLight {
+  @extend .container;
+
+  background-image: url('../../img/webb.png');
 }
 
 .introSearch {
   width: 100%;
   display: flex;
   flex-flow: column;
-  background-image: url('../../img/webb.png');
   color: red;
   padding-bottom: 50px;
 
@@ -40,6 +51,18 @@
   }
 }
 
+.introSearchLight {
+  @extend .introSearch;
+
+  background-image: url('../../img/memphis-mini.png');
+}
+
+.introSearchDark {
+  @extend .introSearch;
+
+  background-image: url('../../img/memphis-mini-dark.png');
+}
+
 .gamesContainer {
   width: 100%;
   margin-top: 50px;
@@ -52,7 +75,7 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.596);
     width: 90%;
     margin: 20px auto;
     border: 2px solid red;
