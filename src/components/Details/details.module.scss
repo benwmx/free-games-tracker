@@ -11,6 +11,7 @@
   @extend .container;
 
   background-image: url('../../img/webb-dark.png');
+  color: white;
 }
 
 .containerLight {
@@ -29,7 +30,6 @@ a {
 }
 
 .detailsContainer {
-  background-color: rgba(255, 255, 255, 0.596);
   display: flex;
   flex-flow: column;
 
@@ -38,6 +38,7 @@ a {
     margin: 0;
     text-align: center;
     padding: 10px;
+    translate: 0px -5px;
   }
 
   .genre,

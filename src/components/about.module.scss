@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.containerDark {
+  @extend .container;
+
+  background-image: url('../img/webb-dark.png');
+  color: white;
+}
+
+.containerLight {
+  @extend .container;
+
+  background-image: url('../img/webb.png');
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.name {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.text {
+  margin: 10px 20px;
+  font-size: 2rem;
+}
+
+.contact {
+  text-align: center;
+
+  .socialList {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    align-content: center;
+
+    .socialBtn {
+      width: 70px;
+      height: 70px;
+
+      .btn {
+        font-size: 2rem;
+        color: rgb(228, 56, 43);
+      }
+    }
+}
+}
