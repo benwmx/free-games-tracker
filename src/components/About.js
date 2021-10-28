@@ -11,6 +11,7 @@ const About = () => {
       <h1 className={Styles.title}>About</h1>
       <p className={Styles.text}>
         A web-based application to search for free games Develped with 💓 by
+        {' '}
         <span className={Styles.name}> Rachid Boudaoudi </span>
         {' '}
         AKA

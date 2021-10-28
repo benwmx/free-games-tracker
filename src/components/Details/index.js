@@ -51,10 +51,9 @@ const Details = () => {
         <div className={Styles.link}>
           <p className={Styles.name}>Link : </p>
           <p className={Styles.value}>
-            🔗
             {
               (details.game_url !== undefined)
-                ? <a href={details.game_url}>more on official Website</a>
+                ? <a href={details.game_url}>🔗 more on official Website 🔗 </a>
                 : 'No Link Available'
             }
           </p>
