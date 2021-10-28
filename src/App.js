@@ -12,7 +12,6 @@ function App() {
     <>
       <Router>
         <Header />
-        <ScrollButton />
         <Switch>
           <Route path="/" exact>
             <Games />
@@ -24,6 +23,7 @@ function App() {
             <About />
           </Route>
         </Switch>
+        <ScrollButton />
       </Router>
     </>
   );

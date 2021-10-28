@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Games Component test Should render 1`] = `
+<div
+  className="containerLight"
+>
+  <div
+    className="introSearchLight"
+  >
+    <div
+      className="intro"
+    >
+      <h1
+        className="title"
+      >
+        Free Games Tracker
+      </h1>
+      <p>
+        Games from 1997 up to now
+      </p>
+      <p>
+        You can search by Title,Realease Date,Genre,Developer
+      </p>
+    </div>
+    <form
+      className="search"
+    >
+      <input
+        className="searchBar"
+        onChange={[Function]}
+        placeholder="Search A Game"
+        type="text"
+      />
+    </form>
+  </div>
+  <div
+    className="gamesContainer"
+  />
+</div>
+`;
