@@ -6,8 +6,10 @@ import Styles from './details.module.scss';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
+  const theme = useSelector((state) => state.theme);
+
   return (
-    <div className={Styles.container}>
+    <div className={(theme.darkTheme) ? Styles.containerDark : Styles.containerLight}>
       <div className={Styles.screenShotsContainer}>
         {
         (details.screenshots === undefined)
@@ -15,49 +17,49 @@ const Details = () => {
           : <ImageSlider screenshots={details.screenshots} thumbnail={details.thumbnail} />
       }
       </div>
-      <div className="detailsContainer">
-        <h1>{details.title}</h1>
-        <div className="genre">
-          <p className="name">Genre</p>
-          <p className="value">{details.genre}</p>
+      <div className={Styles.detailsContainer}>
+        <h1 className={Styles.title}>{details.title}</h1>
+        <div className={Styles.genre}>
+          <p className={Styles.name}>Genre : </p>
+          <p className={Styles.value}>{details.genre}</p>
         </div>
-        <div className="releaseDate">
-          <p className="name">Release Date</p>
-          <p className="value">{details.release_date}</p>
+        <div className={Styles.releaseDate}>
+          <p className={Styles.name}>Release Date : </p>
+          <p className={Styles.value}>{details.release_date}</p>
         </div>
-        <div className="developer">
-          <p className="name">Developer</p>
-          <p className="value">{details.developer}</p>
+        <div className={Styles.developer}>
+          <p className={Styles.name}>Developer : </p>
+          <p className={Styles.value}>{details.developer}</p>
         </div>
-        <div className="publisher">
-          <p className="name">Publisher</p>
-          <p className="value">{details.publisher}</p>
+        <div className={Styles.publisher}>
+          <p className={Styles.name}>Publisher : </p>
+          <p className={Styles.value}>{details.publisher}</p>
         </div>
-        <div className="descContainer">
-          <p>Description</p>
-          <p className="description">
+        <div className={Styles.descContainer}>
+          <p className={Styles.descName}>Description : </p>
+          <p className={Styles.description}>
             {details.description}
           </p>
         </div>
-      </div>
-      <div className="minReqs">
-        {
-          (details.minimum_system_requirements !== undefined)
-            ? <Minrequirements requirements={details.minimum_system_requirements} />
-            : ''
-        }
-      </div>
-      <div className="link">
-        <p className="name">Link</p>
-        <p className="value">
+        <div className={Styles.minReqs}>
           {
-          (details.game_url !== undefined)
-            ? <a href={details.game_url}>more on official Website</a>
-            : 'No'
-        }
-        </p>
+            (details.minimum_system_requirements !== undefined)
+              ? <Minrequirements requirements={details.minimum_system_requirements} />
+              : ''
+          }
+        </div>
+        <div className={Styles.link}>
+          <p className={Styles.name}>Link : </p>
+          <p className={Styles.value}>
+            🔗
+            {
+              (details.game_url !== undefined)
+                ? <a href={details.game_url}>more on official Website</a>
+                : 'No Link Available'
+            }
+          </p>
+        </div>
       </div>
-
     </div>
   );
 };

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 .container {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   margin-top: 50px;
 }
@@ -126,10 +126,6 @@
         -moz-border-radius: 6px;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
-      }
-
-      .releaseDate {
-        // margin: 0;
       }
     }
   }

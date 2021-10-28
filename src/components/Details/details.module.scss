@@ -1,9 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 .container {
-  width: 100%;
+  // width: 100%;
   min-height: 100vh;
   margin-top: 50px;
+  font-family: 'Patrick Hand', cursive;
+}
 
-  .screenShotsContainer {
-    min-height: 100px;
+.containerDark {
+  @extend .container;
+
+  background-image: url('../../img/webb-dark.png');
+}
+
+.containerLight {
+  @extend .container;
+
+  background-image: url('../../img/webb.png');
+}
+
+.screenShotsContainer {
+  min-height: 100px;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+.detailsContainer {
+  background-color: rgba(255, 255, 255, 0.596);
+  display: flex;
+  flex-flow: column;
+
+  .title {
+    background-color: red;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
   }
+
+  .genre,
+  .releaseDate,
+  .developer,
+  .publisher,
+  .link
+  {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid red;
+    padding: 0 20px;
+
+    .name {
+      font-size: 1.3rem;
+      flex: 1;
+    }
+
+    .value {
+      flex: 1;
+      color: #4e0058;
+      text-align: center;
+      background-color: rgb(248, 159, 159);
+      padding: 2px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+  }
+
+
+  .descContainer {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border-bottom: 2px solid red;
+
+    .descName {
+      font-size: 1.3rem;
+      margin: 20px 0 0 0;
+    }
+
+    .description {
+      padding: 0 20px;
+    }
+  }
+
+  .minReqs {
+    border-bottom: 2px solid red;
+
+    .minReqsContainer {
+      margin: 0 10px 20px 10px;
+          
+      .name {
+      font-size: 1.3rem;
+      text-align: center;
+      }
+
+      .minReqsTable {
+        margin: 0 auto;
+        border: 2px solid red;
+        border-collapse: collapse;
+
+        td {
+          border: 1px solid red;
+          text-align: center;
+          font-size: 1.2rem;
+          padding: 6px;
+        }
+      }
+    }
+  }
+
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Styles from './details.module.scss';
 
 const Minrequirements = (props) => {
   const { requirements } = props;
 
   return (
-    <div className="minReqsContainer">
-      <p>Minimum System Requirements</p>
-      <table className="minReqsTable">
+    <div className={Styles.minReqsContainer}>
+      <p className={Styles.name}>Minimum System Requirements : </p>
+      <table className={Styles.minReqsTable}>
         <thead />
         <tbody>
           <tr>

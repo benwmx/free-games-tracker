@@ -10,8 +10,8 @@ function Game(props) {
       <div className={Styles.details}>
         <h2 className={Styles.title}>{game.title}</h2>
         <p className={Styles.genre}>{game.genre}</p>
-        <p className={Styles.releaseDate}>{game.release_date}</p>
         <p className={Styles.developer}>{game.developer}</p>
+        <p className={Styles.releaseDate}>{game.release_date}</p>
       </div>
     </>
   );
