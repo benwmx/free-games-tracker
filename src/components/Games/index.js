@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getListOfGames } from '../../redux/games';
 import { getDetailsOfAGame } from '../../redux/details';
+import { getUserTheme } from '../../redux/theme';
 import Game from './Game';
 import Styles from './game.module.scss';
 
@@ -14,7 +15,10 @@ const Games = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (games.length === 0) dispatch(getListOfGames());
+    if (games.length === 0) {
+      dispatch(getListOfGames());
+      dispatch(getUserTheme());
+    }
   }, []);
 
   const handleSearch = (event) => {

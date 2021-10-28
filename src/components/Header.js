@@ -1,18 +1,17 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { BiLeftArrow } from 'react-icons/bi';
+import { RiHome2Fill } from 'react-icons/ri';
 import { BsSunFill, BsInfoCircleFill, BsMoonFill } from 'react-icons/bs';
 import { clearDetails, unclearDetails } from '../redux/details';
-import { toggleTheme } from '../redux/theme';
+import { toggleTheme, updateUserTheme } from '../redux/theme';
 import Styles from './header.module.scss';
 
 const Header = () => {
-  const details = useSelector((state) => state.details);
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
 
-  const onClickArrow = () => {
+  const onClickHome = () => {
     dispatch(clearDetails());
   };
 
@@ -22,6 +21,7 @@ const Header = () => {
 
   const onClickTheme = () => {
     dispatch(toggleTheme());
+    dispatch(updateUserTheme());
   };
 
   return (
@@ -31,8 +31,10 @@ const Header = () => {
         ? { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
         : { backgroundColor: 'rgba(219, 219, 219, 0.8)' }}
     >
-      <NavLink to="/" onClick={onClickArrow}>
-        <BiLeftArrow className={(theme.darkTheme) ? Styles.headerBtnsDark : Styles.headerBtnsLight} style={(details.empty) ? { display: 'none' } : {}} />
+      <NavLink to="/" onClick={onClickHome}>
+        <RiHome2Fill
+          className={(theme.darkTheme) ? Styles.headerBtnsDark : Styles.headerBtnsLight}
+        />
       </NavLink>
       <div className={Styles.infoAndTheme}>
         {
