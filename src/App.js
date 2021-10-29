@@ -5,7 +5,6 @@ import Games from './components/Games';
 import Details from './components/Details';
 import About from './components/About';
 import ScrollButton from './components/ScrollButton';
-import './App.css';
 
 function App() {
   return (

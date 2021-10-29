@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 .container {
-  // width: 100%;
   min-height: 100vh;
   margin-top: 50px;
   font-family: 'Patrick Hand', cursive;
@@ -39,15 +38,14 @@ a {
     margin: 0;
     text-align: center;
     padding: 10px;
-    translate: 0px -5px;
+    translate: 0 -5px;
   }
 
   .genre,
   .releaseDate,
   .developer,
   .publisher,
-  .link
-  {
+  .link {
     display: flex;
     align-items: center;
     border-bottom: 2px solid red;
@@ -64,14 +62,13 @@ a {
       text-align: center;
       background-color: rgb(248, 159, 159);
       padding: 2px;
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
     }
   }
-
 
   .descContainer {
     display: flex;
@@ -94,10 +91,10 @@ a {
 
     .minReqsContainer {
       margin: 0 10px 20px 10px;
-          
+
       .name {
-      font-size: 1.3rem;
-      text-align: center;
+        font-size: 1.3rem;
+        text-align: center;
       }
 
       .minReqsTable {
@@ -115,4 +112,3 @@ a {
     }
   }
 }
-

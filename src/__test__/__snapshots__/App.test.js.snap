@@ -75,7 +75,6 @@ Array [
           className="headerBtnsLight"
           fill="currentColor"
           height="1em"
-          onClick={[Function]}
           stroke="currentColor"
           strokeWidth="0"
           style={

@@ -74,7 +74,6 @@ exports[`Header Component test Should render 1`] = `
         className="headerBtnsLight"
         fill="currentColor"
         height="1em"
-        onClick={[Function]}
         stroke="currentColor"
         strokeWidth="0"
         style={

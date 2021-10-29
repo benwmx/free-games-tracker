@@ -14,7 +14,7 @@ const APP = (
   </Provider>
 );
 
-describe('App Component test', () => {
+describe('App Component test', async () => {
   it('Should render', () => {
     const app = renderer.create(APP).toJSON();
     expect(app).toMatchSnapshot();
