@@ -76,6 +76,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - GitHub: [@benwmx](https://github.com/benwmx)
 - Twitter: [@ben_wmx](https://twitter.com/ben_wmx)
 - LinkedIn: [Rachid Boudaoudi](https://www.linkedin.com/in/rachid-boudaoudi/)
+## Credit
+
+the design is inspired from a template made by Kenyan designer Nelson Sakwa, you can show your support by following him & checkout his other designs in [Behince](https://www.behance.net/sakwadesignstudio)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
