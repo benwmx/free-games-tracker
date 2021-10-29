@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Component test Should render 1`] = `
+<div
+  className="containerLight"
+>
+  <div
+    className="screenShotsContainer"
+  >
+    Loading ...
+  </div>
+  <div
+    className="detailsContainer"
+  >
+    <h1
+      className="title"
+    />
+    <div
+      className="genre"
+    >
+      <p
+        className="name"
+      >
+        Genre : 
+      </p>
+      <p
+        className="value"
+      />
+    </div>
+    <div
+      className="releaseDate"
+    >
+      <p
+        className="name"
+      >
+        Release Date : 
+      </p>
+      <p
+        className="value"
+      />
+    </div>
+    <div
+      className="developer"
+    >
+      <p
+        className="name"
+      >
+        Developer : 
+      </p>
+      <p
+        className="value"
+      />
+    </div>
+    <div
+      className="publisher"
+    >
+      <p
+        className="name"
+      >
+        Publisher : 
+      </p>
+      <p
+        className="value"
+      />
+    </div>
+    <div
+      className="descContainer"
+    >
+      <p
+        className="descName"
+      >
+        Description : 
+      </p>
+      <p
+        className="description"
+      />
+    </div>
+    <div
+      className="minReqs"
+    >
+      
+    </div>
+    <div
+      className="link"
+    >
+      <p
+        className="name"
+      >
+        Link : 
+      </p>
+      <p
+        className="value"
+      >
+        No Link Available
+      </p>
+    </div>
+  </div>
+</div>
+`;

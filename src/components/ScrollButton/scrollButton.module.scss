@@ -1,0 +1,26 @@
+.scrollButton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+
+  .scrollIcon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .scrollIconDark {
+    @extend .scrollIcon;
+
+    color: white;
+  }
+
+  .scrollIconLight {
+    @extend .scrollIcon;
+
+    color: black;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+
+  .infoAndTheme {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .headerBtns {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .headerBtnsLight {
+    @extend .headerBtns;
+
+    color: black;
+  }
+
+  .headerBtnsDark {
+    @extend .headerBtns;
+
+    color: rgb(219, 219, 219);
+  }
+}

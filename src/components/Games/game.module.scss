@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+.containerDark {
+  @extend .container;
+
+  background-image: url('../../img/webb-dark.png');
+}
+
+.containerLight {
+  @extend .container;
+
+  background-image: url('../../img/webb.png');
+}
+
+.introSearch {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  color: red;
+  padding-bottom: 50px;
+
+  .intro {
+    margin: 20px 40px;
+
+    .title {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3rem;
+    }
+  }
+
+  .search {
+    margin: 20px 40px;
+
+    .searchBar {
+      width: 90%;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid red;
+      color: red;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.introSearchLight {
+  @extend .introSearch;
+
+  background-image: url('../../img/memphis-mini.png');
+}
+
+.introSearchDark {
+  @extend .introSearch;
+
+  background-image: url('../../img/memphis-mini-dark.png');
+}
+
+.gamesContainer {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+
+  .gameContainer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid red;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .image {
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      -ms-border-radius: 4px 4px 0 0;
+      -o-border-radius: 4px 4px 0 0;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        background-color: red;
+        margin: 0 0 10px 0;
+        font-size: 1.2rem;
+        padding: 10px 0;
+        text-align: center;
+        font-family: 'Patrick Hand', cursive;
+        font-weight: bold;
+        font-style: italic;
+        color: black;
+      }
+
+      p {
+        margin: 0 0 10px 10px;
+        color: black;
+      }
+
+      .genre {
+        font-size: 0.7rem;
+        align-self: flex-start;
+        background-color: rgb(248, 159, 159);
+        padding: 2px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+      }
+    }
+  }
+}
